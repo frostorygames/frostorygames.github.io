@@ -2,80 +2,33 @@
 <html>
 <head>
 
-<title>frostory</title>
 <style>
-body{
-	background-image:url("assets/img/bg.png");
-	background-repeat: repeat-x;
-	background-size: 1243px 1201px;
-	background-position: top;
-	background-color: #dbd5ce;
+    html, body {
+
+    margin: 0;
+
+    height: 100%;
+
+
 }
 
-.wrapper {
-  width: 600px;
-  margin: 0 auto; /* 위 아래 마진은 0 좌우 마진은 auto */
+
+.test{
+    width:50%;
+    height:90%;
+
+    border: 3px solid red;
+
+    margin:auto auto;
+
 }
-
-.center {
-  margin: 0 auto;
-}
-
-.title {
-	width: calc(100% - 100px);
-	height: calc((100vw - 100px) * 0.2683);
-
-	max-width:492px;
-	max-height:131px;
-
-    position: absolute; /* positions out of the flow, but according to the nearest parent */
-    top: -80%; right: 0; /* confuse it i guess */
-    bottom: 0; left: 0;
-    margin: auto; /* make em equal */
-}
-
-.video {
-	width: calc(100% - 20px);
-	height: calc((100vw - 20px) * 0.5625);
-
-	max-width:720px;
-	max-height:405px;
-
-    position: absolute; /* positions out of the flow, but according to the nearest parent */
-    top: -30%; right: 0; /* confuse it i guess */
-    bottom: 0; left: 0;
-    margin: auto; /* make em equal */
-}
-
-.prop_1 {
-    position: absolute; /* positions out of the flow, but according to the nearest parent */
-    top: 50%; right: 0; /* confuse it i guess */
-    bottom: 0; left: -50%;
-    margin: auto; /* make em equal */
-}
-
-.prop_2 {
-    position: absolute; /* positions out of the flow, but according to the nearest parent */
-    top: 90%; right: -30%; /* confuse it i guess */
-    bottom: 0; left: 0%;
-    margin: auto; /* make em equal */
-}
-
 </style>
+
 </head>
 
 <body>
 
-
-<img class="title" src="assets/img/title.png">
-
-
-<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/sk5iccX-DFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-twitter:fros
-
-<img class="prop_1" src="assets/img/prop_1.png">
-<img class="prop_2" src="assets/img/prop_2.png">
+<div class="test"></div>
 
 </body>
 
