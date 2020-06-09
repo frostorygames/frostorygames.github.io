@@ -72,7 +72,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : frostory_game
 facebook:
   username               :
   app_id                 :
@@ -281,3 +281,7 @@ defaults:
       comments: # true
       share: true
       related: true
+  - scope:
+      path: "assets/img"
+    values:
+      image: true
