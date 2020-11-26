@@ -1,146 +1,178 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-<link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Sunflower:wght@300;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500;700&display=swap" rel="stylesheet">
 
-<title>Frostory 소개 페이지</title>
-<style>
+	<title>Frostory 소개 페이지</title>
+	<style>
+		html {
+			margin: 0;
+			height: 100%;
+		}
 
-html{
-    margin: 0;
-    height: 100%;
-}
+		body {
+			margin: 0;
+			width: 100%;
+			height: 100%;
 
-body{
-    margin: 0;
-	width:100%;
-	height:100%;
+			background-image: url("assets/img/prop_2.png"), url("assets/img/bg.png");
+			background-repeat: no-repeat, repeat-x;
+			background-size: 786px 883px, 1243px 1201px;
+			background-position: left calc(50vw + 100px) top calc(35vh + 400px), top;
+			background-color: #dbd5ce;
+		}
 
-	background-image:url("assets/img/prop_2.png"),url("assets/img/bg.png");
-	background-repeat: no-repeat, repeat-x;
-	background-size: 786px 883px, 1243px 1201px;
-	background-position: left calc(50vw + 100px) top calc(35vh + 400px), top;
-	background-color: #dbd5ce;
-}
+		.parent {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+		}
 
-.parent {
-	width:100%;
-	height:100%;
-	margin:0;
-}
+		.front-space {
+			display: block;
 
-.front-space {
-	display: block;
+			min-height: 1%;
+		}
 
-	min-height:1%;
-}
+		.snd-space {
+			display: block;
 
-.snd-space {
-	display: block;
+			min-height: 1%;
+		}
 
-	min-height:1%;
-}
+		.title {
+			display: block;
 
-.title {
-	display: block;
+			width: calc(100% - 100px);
+			height: calc((100vw - 100px) * 0.2683);
 
-	width: calc(100% - 100px);
-	height: calc((100vw - 100px) * 0.2683);
+			max-width: 492px;
+			max-height: 131px;
 
-	max-width:492px;
-	max-height:131px;
+			margin: 40px auto auto auto;
+		}
 
-	margin:40px auto auto auto;
-}
+		.video {
+			display: block;
 
-.video {
-	display: block;
+			width: calc(100% - 20px);
+			height: calc((100vw - 20px) * 0.5625);
 
-	width: calc(100% - 20px);
-	height: calc((100vw - 20px) * 0.5625);
+			max-width: 720px;
+			max-height: 404.5px;
 
-	max-width:720px;
-	max-height:404.5px;
-
-    margin: 0 auto; /* make em equal */
-}
-
-
-.prop_1 {
-    position: absolute; /* positions out of the flow, but according to the nearest parent */
-    top:30%; right: 50%; /* confuse it i guess */
-    bottom: 0;
-
-    pointer-events:none;
-}
-
-.prop_2 {
-    position: absolute; /* positions out of the flow, but according to the nearest parent */
-    top: 0; left: 60%; /* confuse it i guess */
-    bottom: 0;
-    margin: 40% auto 0 auto; /* make em equal */
-
-    pointer-events:none;
-}
-
-.desc {
-	font-family: "Sunflower", sans-serif;
-	color:#000000;
-	text-align: center;
-	z-index: 1000;
-	position: relative;
-	font-size:22px;
-	font-weight:400;
-}
+			margin: 0 auto;
+			/* make em equal */
+		}
 
 
-.desc2box {
-	width:220px;
-	height:150px;
-	margin:auto auto;
-}
+		.prop_1 {
+			position: absolute;
+			/* positions out of the flow, but according to the nearest parent */
+			top: 30%;
+			right: 50%;
+			/* confuse it i guess */
+			bottom: 0;
 
-</style>
+			pointer-events: none;
+		}
+
+		.prop_2 {
+			position: absolute;
+			/* positions out of the flow, but according to the nearest parent */
+			top: 0;
+			left: 60%;
+			/* confuse it i guess */
+			bottom: 0;
+			margin: 40% auto 0 auto;
+			/* make em equal */
+
+			pointer-events: none;
+		}
+
+		.desc {
+			font-family: 'Noto Sans KR', sans-serif;
+			color: #000000;
+			text-align: center;
+			z-index: 1000;
+			position: relative;
+			font-size: 22px;
+			font-weight: 400;
+		}
+
+
+		.down_btn {
+			text-align: center;
+			position: relative;
+			z-index: 1000;
+		}
+
+		.down_btn:hover {
+			z-index: 1000;
+			color: #000000;
+			filter: brightness(1.75);
+		}
+
+		.desc_down {
+			font-family: 'Noto Sans KR', sans-serif;
+			color: #000000;
+			text-align: center;
+			z-index: 1000;
+			position: relative;
+			font-size: 12px;
+			font-weight: 400;
+		}
+
+
+		.desc2box {
+			width: 220px;
+			height: 150px;
+			margin: auto auto;
+		}
+	</style>
 </head>
 
-<body >
+<body>
 
 
-<div class="parent">
+	<div class="parent">
 
-	<img class="prop_1" src="assets/img/prop_1.png">
+		<img class="prop_1" src="assets/img/prop_1.png">
 
-	<div class="front-space"></div>
+		<div class="front-space"></div>
 
-	<img class="title" src="assets/img/title.png">
+		<img class="title" src="assets/img/title.png">
 
-	<div class="snd-space"></div>
+		<div class="snd-space"></div>
 
-	<div class="desc">
+		<div class="desc">
 
-	<p>소개 페이지를 방문해주셔서 감사합니다!</p>
-	프로스토리는 스토리가 있는 액션 어드벤처 게임으로,<br>
-	2017년 초부터 두 명이서 개발하고 있습니다.<br>
-	2021년 하반기 출시를 목표로 개발중에 있으니 조금만 기다려 주세요!
-	<br> 
-	<br> 
+			<p>소개 페이지를 방문해주셔서 감사합니다!</p>
+			프로스토리는 스토리가 있는 액션 어드벤처 게임입니다.<br><br>
+		</div>
+		<div class="desc_down">
+			<a class="down_btn" href="https://drive.google.com/file/d/1kF4HoKXCjvqvSxR3qHQYvAO2KzyA7CET/view?usp=sharing" target="_blank">
+				<img class="fit-picture" src="assets/img/demo_download.png"></a>
+				<p>Windows, 2020-11-26 버전</p>
+		</div><br>
 
-	</div>
+		<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/JdcelhlP2zw" frameborder="0"
+			allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-	<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/JdcelhlP2zw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-<!-- 
+		<!-- 
 	<img class="prop_2" src="assets/img/prop_2.png"> -->
-	<br>
+		<br>
 
-	<div class="desc2box">
-		<p> Contact: </p>
-		<a href="https://twitter.com/frostory_game">Twitter : frostory_game</a>
-		<br>frostorygame@gmail.com
+		<div class="desc2box">
+			<p> Contact: </p>
+			<a href="https://twitter.com/frostory_game">Twitter : frostory_game</a>
+			<br>frostorygame@gmail.com
+		</div>
+
 	</div>
-
-</div>
 
 </body>
 
